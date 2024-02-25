@@ -25,7 +25,7 @@ db.sync().catch((err) => {
 
 app.use(cors({
     credentials: true,
-    origin: process.env.URL_CLIENT,
+    origin: [process.env.URL_CLIENT_1, process.env.URL_CLIENT_2, process.env.URL_CLIENT_3, process.env.URL_CLIENT_4,process.env.URL_CLIENT_5, process.env.URL_CLIENT_6,process.env.URL_CLIENT_7,process.env.URL_CLIENT_8, process.env.URL_CLIENT_9,process.env.URL_CLIENT_10 ],
 }));
 
 
